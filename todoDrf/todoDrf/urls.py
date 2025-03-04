@@ -19,7 +19,8 @@ from django.urls import path
 from todo import views
 
 urlpatterns = [
-    path('', views.index, name="todo"),
+    # path('', views.index, name="todo"),
+    path('api/todos/', views.index, name="todo"),
     path('del/<int:item_id>', views.remove, name="del"),
     path('admin/', admin.site.urls),
 ]

@@ -54,6 +54,7 @@ def index(request):
         todos = [{"id": item.id, "title": item.title, "details": item.details, "date": item.date} for item in item_list]
         return JsonResponse({"todos": todos})
 
+@csrf_exempt
 def remove(request, item_id):
     print(item_id)
     item = Todo.objects.get(id=item_id)

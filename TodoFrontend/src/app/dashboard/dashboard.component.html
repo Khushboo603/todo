@@ -1,7 +1,7 @@
 <div style="display: flex; justify-content: space-between; margin: 15px;">
     <div class="card" style="width: 40%;">
         <div class="card-body">
-            <div class="card-title">
+            <!-- <div class="card-title">
                 <form [formGroup]="form">
                     <div class="form-group">
                         <label for="title">Title</label>
@@ -19,15 +19,21 @@
                         <button type="button" (click)="submit()">Submit</button>
                     </div>
                 </form>
-            </div>
+            </div> -->
+            <h1>Counter Application</h1>
+
+            <button mat-raised-button color="primary" (click)="onIncrement()">+</button>
+            <button mat-raised-button color="accent" (click)="onDecrement()">-</button>
+            <button mat-raised-button color="warn" (click)="onReset()">Reset</button>
         </div>
     </div>
 
     <div class="card" style="width: 50%;">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <!-- <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+                content.</p> -->
+                <app-display-dashboard></app-display-dashboard>
         </div>
     </div>
 </div>
